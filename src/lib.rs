@@ -33,7 +33,7 @@ pub fn path_buf_to_string(pb:&PathBuf) -> String {
 }
 
 #[allow(dead_code)]
-pub fn string_to_path_buf(st:&String) -> PathBuf {
+pub fn string_to_path_buf(st:&str) -> PathBuf {
     let mut path_buf:PathBuf = PathBuf::new();
     path_buf.push(st);
     path_buf
@@ -57,7 +57,7 @@ pub fn os_string_to_string(oss:&OsString) -> String {
 }
 
 #[allow(dead_code)]
-pub fn string_to_os_string(str:&String) -> OsString {
+pub fn string_to_os_string(str:&str) -> OsString {
     let mut os_str:OsString = OsString::new();
     os_str.push(str);
     os_str
